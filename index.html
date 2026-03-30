@@ -11,8 +11,11 @@
             font-family: Arial, sans-serif;
         }
 
+
         body {
             background: #f5f7fa;
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
         }
 
         /* NAVBAR */
@@ -46,18 +49,18 @@
 
         /* HERO */
         .hero {
-            text-align: center;
-            padding: 60px 20px;
+            background: linear-gradient(135deg, #0a66c2, #4facfe);
+            color: white;
+            border-radius: 0 0 30px 30px;
         }
-
         .hero h2 {
-            font-size: 32px;
-            color: #333;
+            font-size: 36px;
+            font-weight: bold;
         }
 
         .hero p {
-            margin-top: 10px;
-            color: #555;
+            font-size: 18px;
+            color: #666;
         }
 
         /* SECTION */
@@ -75,10 +78,10 @@
         /* CARD */
         .card {
             background: white;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             transition: 0.3s;
         }
 
@@ -135,6 +138,12 @@
             }
         }
 
+        .section h2 {
+            font-size: 26px;
+            border-left: 5px solid #0a66c2;
+            padding-left: 10px;
+        }
+
         @media (max-width: 600px) {
 
             .hero h2 {
@@ -158,6 +167,27 @@
                 width: 100%;
                 text-align: center;
             }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .dark {
+            background: #121212;
+            color: white;
+        }
+
+        .dark .card {
+            background: #1e1e1e;
+        }
+
+        .dark nav {
+            background: #000;
+        }
+
+        .dark footer {
+            background: #000;
         }
     </style>
 </head>
@@ -193,6 +223,12 @@ function type() {
 type();
 </script>
 
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+}
+</script>
+
 <body>
 
 <!-- NAVBAR -->
@@ -203,6 +239,7 @@ type();
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <button onclick="toggleDarkMode()">🌙</button>
     </div>
 </nav>
 
