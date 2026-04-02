@@ -5,17 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pasindu Dilshan Portfolio</title>
 
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo1.png" type="image/png">
+
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Devicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
+
+
 
 <body>
 
@@ -148,66 +154,6 @@
 <!-- =========================
      💡 SKILLS
 ========================= -->
-<section id="skills" class="reveal">
-  <h2>My Skills</h2>
-
-  <div class="skills-container">
-    <div class="skill">HTML</div>
-    <div class="skill">CSS</div>
-    <div class="skill">JavaScript</div>
-    <div class="skill">React</div>
-    <div class="skill">FastAPI</div>
-    <div class="skill">MySQL</div>
-    <div class="skill">Git</div>
-  </div>
-</section>
-
-
-<!-- =========================
-     🚀 PROJECTS
-========================= -->
-<section id="projects" class="reveal">
-  <h2>Projects</h2>
-
-  <div class="projects-container">
-
-    <div class="project-card">
-      <h3>Hotel Review System</h3>
-      <p>Full-stack web application using FastAPI and modern frontend.</p>
-      <a href="#" class="btn outline">GitHub</a>
-    </div>
-
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
-      <p>Personal portfolio website with modern UI and animations.</p>
-      <a href="#" class="btn outline">GitHub</a>
-    </div>
-
-    <div class="project-card">
-      <h3>To-Do App</h3>
-      <p>Simple task management application using JavaScript.</p>
-      <a href="#" class="btn outline">GitHub</a>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- =========================
-     📬 CONTACT
-========================= -->
-<section id="contact" class="contact reveal">
-  <h2>Contact Me</h2>
-
-  <p>Email: pasindu@example.com</p>
-
-  <div>
-    <a href="#">GitHub</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">Email</a>
-  </div>
-</section>
-
 <section id="skills" class="skills-section reveal">
 
   <h2>Skills & Technologies</h2>
@@ -227,26 +173,231 @@
 
     <!-- FRONTEND -->
     <div class="skills-content active" id="frontend">
-      <div class="skill-card">React</div>
-      <div class="skill-card">Next.js</div>
-      <div class="skill-card">TypeScript</div>
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">HTML5</div>
-      <div class="skill-card">CSS3</div>
+    <div class="skill-card">
+      <i class="fab fa-react"></i>
+      <span>React</span>
     </div>
+
+    <div class="skill-card">
+      <i class="fab fa-js"></i>
+      <span>JavaScript</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="fab fa-html5"></i>
+      <span>HTML5</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="fab fa-css3-alt"></i>
+      <span>CSS3</span>
+    </div>
+
+    </div>
+
 
     <!-- BACKEND -->
     <div class="skills-content" id="backend">
-      <div class="skill-card">FastAPI</div>
-      <div class="skill-card">Node.js</div>
-      <div class="skill-card">MySQL</div>
+
+      <div class="skill-card">
+        <i class="devicon-fastapi-plain colored"></i>
+        <span>FastAPI</span>
+      </div>
+
+      <div class="skill-card">
+        <i class="devicon-nodejs-plain colored"></i>
+        <span>Node.js</span>
+      </div>
+
+      <div class="skill-card">
+        <i class="devicon-mysql-plain colored"></i>
+        <span>MySQL</span>
+      </div>
+
     </div>
 
     <!-- TOOLS -->
     <div class="skills-content" id="tools">
-      <div class="skill-card">Git</div>
-      <div class="skill-card">VS Code</div>
-      <div class="skill-card">Figma</div>
+
+      <div class="skill-card">
+        <i class="devicon-git-plain colored"></i>
+        <span>Git</span>
+      </div>
+
+      <div class="skill-card">
+        <i class="devicon-vscode-plain colored"></i>
+        <span>VS Code</span>
+      </div>
+
+      <div class="skill-card">
+        <i class="devicon-figma-plain colored"></i>
+        <span>Figma</span>
+      </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =========================
+     🚀 PROJECTS
+========================= -->
+<section id="projects" class="projects reveal">
+
+  <h2>My Projects</h2>
+
+<div class="projects-container">
+
+  <!-- Project 1 -->
+  <div class="project-card">
+    <img src="assets/project1.jpg" alt="Project 01">
+    <div class="project-content">
+      <h3>Tourism App - TravelWish</h3>
+
+      <div class="tags">
+        <span class="tag mobile">Mobile</span>
+        <span class="tag done">Completed</span>
+      </div>
+
+      <p>
+        Developed a mobile application for tourism with booking,
+        guides, and real-time features.
+      </p>
+
+      <div class="project-links">
+        <a href="#"><i class="fab fa-github"></i> Code</a>
+        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="project-card">
+    <img src="assets/project2.jpg" alt="Project 02">
+    <div class="project-content">
+      <h3>Tourism App - TravelWish</h3>
+
+      <div class="tags">
+        <span class="tag mobile">Mobile</span>
+        <span class="tag done">Completed</span>
+      </div>
+
+      <p>
+        Developed a mobile application for tourism with booking,
+        guides, and real-time features.
+      </p>
+
+      <div class="project-links">
+        <a href="#"><i class="fab fa-github"></i> Code</a>
+        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="project-card">
+    <img src="assets/project3.jpg" alt="Project 03">
+    <div class="project-content">
+      <h3>Tourism App - TravelWish</h3>
+
+      <div class="tags">
+        <span class="tag mobile">Mobile</span>
+        <span class="tag done">Completed</span>
+      </div>
+
+      <p>
+        Developed a mobile application for tourism with booking,
+        guides, and real-time features.
+      </p>
+
+      <div class="project-links">
+        <a href="#"><i class="fab fa-github"></i> Code</a>
+        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     📬 CONTACT
+========================= -->
+
+<section id="contact" class="contact-section">
+
+  <div class="contact-container">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-left">
+
+      <h2>Let's Connect</h2>
+
+      <p>
+        I'm always open to discussing new opportunities and projects.
+      </p>
+
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>pasindud265@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>Phone</h4>
+            <p>+94 71 884 3882</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h4>Location</h4>
+            <p>Moratuwa, Sri Lanka</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Follow Me</h3>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE (FORM) -->
+    <div class="contact-right">
+
+      <h2>Send Me a Message</h2>
+
+      <form class="contact-form">
+
+        <div class="form-row">
+          <input type="text" placeholder="Your name">
+          <input type="email" placeholder="your.email@example.com">
+        </div>
+
+        <input type="text" placeholder="What's this about?">
+
+        <textarea placeholder="Tell me about your project..."></textarea>
+
+        <button type="submit" class="btn primary">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+
+      </form>
+
     </div>
 
   </div>
@@ -263,7 +414,12 @@
 <!-- =========================
      📜 JAVASCRIPT
 ========================= -->
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 
 </body>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Pasindu Dilshan. Built with HTML, CSS & JavaScript.</p>
+</footer>
+
 </html>
