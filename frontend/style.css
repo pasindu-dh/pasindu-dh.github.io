@@ -476,3 +476,70 @@ h2 {
   font-size: 14px;
   line-height: 1.6;
 }
+
+/* =========================
+   💻 SKILLS SECTION
+========================= */
+.skills-section {
+  text-align: center;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab.active {
+  background: linear-gradient(90deg, #0AC4E0, #4facfe);
+  color: #000;
+}
+
+/* Skills Box */
+.skills-box {
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Skill Grid */
+.skills-content {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.skills-content.active {
+  display: grid;
+}
+
+/* Skill Card */
+.skill-card {
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(10,196,224,0.3);
+}
