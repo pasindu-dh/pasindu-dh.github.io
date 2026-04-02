@@ -64,6 +64,27 @@ nav h1 span {
   color: #0AC4E0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  font-size: 28px; /* increase size */
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Pasindu = blue */
+.logo .first-name {
+  color: #0AC4E0;
+}
+
+/* Dilshan = white */
+.logo .last-name {
+  color: #ffffff;
+}
+
 /* Mobile menu */
 .menu-btn {
   display: none;
@@ -780,6 +801,39 @@ h2 {
 
 .btn.primary:hover {
   box-shadow: 0 0 15px #0AC4E0;
+}
+
+.send-btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 2px solid #0AC4E0;
+  background: transparent;
+  color: #0AC4E0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 20px auto;
+}
+
+/* 🔥 Hover Glow Effect */
+.send-btn:hover {
+  background: #0AC4E0;
+  color: #000;
+  box-shadow: 
+    0 0 10px #0AC4E0,
+    0 0 20px #0AC4E0,
+    0 0 40px #0AC4E0;
+}
+
+.send-btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* RESPONSIVE */

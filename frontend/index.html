@@ -29,10 +29,16 @@
      📌 NAVBAR
 ========================= -->
 <nav>
-  <h1><span>Pasindu</span> Dilshan</h1>
+  <!-- LOGO (click → home) -->
+<a href="#home" class="logo">
+  <span class="first-name">Pasindu</span> 
+  <span class="last-name">Dilshan</span>
+</a>
 
+  <!-- MENU BUTTON (mobile) -->
   <div class="menu-btn">☰</div>
 
+  <!-- NAV LINKS -->
   <ul class="nav-links">
     <li><a href="#home" class="active">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -41,6 +47,11 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
+
+<!-- ✅ HOME SECTION (OUTSIDE NAV) -->
+<section id="home">
+  <!-- Your hero content -->
+</section>
 
 
 <!-- =========================
@@ -392,9 +403,9 @@
 
         <textarea placeholder="Tell me about your project..."></textarea>
 
-        <button type="submit" class="btn primary">
-          <i class="fas fa-paper-plane"></i> Send Message
-        </button>
+        <div class="btn-container">
+          <button class="send-btn">Send Message</button>
+        </div>
 
       </form>
 
