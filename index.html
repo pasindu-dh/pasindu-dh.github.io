@@ -13,9 +13,9 @@
 
 
         body {
-            background: #f5f7fa;
-            font-family: 'Segoe UI', sans-serif;
-            line-height: 1.6;
+            background: #0a0f1c;
+            color: #e6edf3;
+            font-family: 'Courier New', monospace;
         }
 
         /* NAVBAR */
@@ -125,6 +125,16 @@
 
         .section {
         animation: fadeIn 1s ease-in;
+        }
+
+        .icons a {
+            font-size: 24px;
+            margin: 10px;
+            color: #aaa;
+        }
+
+        .icons a:hover {
+            color: var(--primary);
         }
 
         @keyframes fadeIn {
@@ -298,6 +308,29 @@ function toggleDarkMode() {
         <a class="btn" href="#">View Project</a>
     </div>
 
+</div>
+
+<div class="projects">
+
+    <div class="project-card">
+        <h3>Hardware Project</h3>
+        <p>My first hardware system project.</p>
+        <p style="color:#00ff88;">C, Arduino</p>
+        <a href="#">GitHub</a>
+    </div>
+
+</div>
+
+<div class="section" id="contact">
+    <h2>Get In Touch</h2>
+
+    <p>Feel free to contact me</p>
+
+    <div class="icons">
+        <a href="https://github.com/pasindu-dh">🐙</a>
+        <a href="#">💼</a>
+        <a href="mailto:pasindud265@gmail.com">✉️</a>
+    </div>
 </div>
 
 
