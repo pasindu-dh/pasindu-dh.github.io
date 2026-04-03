@@ -23,6 +23,13 @@ section {
   padding: 100px 10%;
 }
 
+/* GLOBAL CONTAINER */
+.container {
+  max-width: 1100px;   /* control width here */
+  margin: 0 auto;      /* center horizontally */
+  padding: 0 20px;     /* small side spacing */
+}
+
 /* =========================
    📌 NAVBAR
 ========================= */
@@ -31,24 +38,40 @@ nav {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 20px 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 20px 0; /* ❗ remove 10% */
   background: rgba(10, 15, 31, 0.7);
   backdrop-filter: blur(10px);
   z-index: 1000;
 }
 
-nav h1 {
-  font-size: 24px;
-  font-weight: bold;
+/* ✅ MAIN CONTAINER (controls width + alignment) */
+nav .container {
+  max-width: 1100px;        /* 🔥 control width */
+  margin: 0 auto;           /* center navbar */
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between; /* logo left, menu right */
+  align-items: center;
 }
 
-nav h1 span {
+/* LOGO */
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo .first-name {
   color: #0AC4E0;
 }
 
+.logo .last-name {
+  color: #ffffff;
+}
+
+/* NAV LINKS */
 .nav-links {
   display: flex;
   gap: 30px;
@@ -56,6 +79,8 @@ nav h1 span {
 }
 
 .nav-links a {
+  text-decoration: none;
+  color: white;
   transition: 0.3s;
 }
 
@@ -64,32 +89,16 @@ nav h1 span {
   color: #0AC4E0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-.logo {
-  font-size: 28px; /* increase size */
-  font-weight: 700;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Pasindu = blue */
-.logo .first-name {
-  color: #0AC4E0;
-}
-
-/* Dilshan = white */
-.logo .last-name {
-  color: #ffffff;
-}
-
-/* Mobile menu */
+/* MOBILE MENU */
 .menu-btn {
   display: none;
   font-size: 24px;
   cursor: pointer;
+}
+
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
 }
 
 /* =========================
