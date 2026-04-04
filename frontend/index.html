@@ -92,38 +92,42 @@
 </section>
 
 
-<!-- =========================
+<!-- ========================= 
      👤 ABOUT
 ========================= -->
 <section id="about" class="about reveal">
 
-  <h2>About Me</h2>
+  <div class="about-wrapper">
 
-  <div class="about-container">
+    <!-- TITLE -->
+    <h2>About Me</h2>
 
-    <!-- LEFT TEXT -->
-    <div class="about-text">
-      <p>
-        I'm an enthusiastic undergraduate student at the Faculty of Information Technology,
-        University of Moratuwa, building a strong foundation in computer science.
-      </p>
+    <!-- TOP CONTENT (TEXT + IMAGE) -->
+    <div class="about-container">
 
-      <p>
-        My passion lies in exploring new technologies and creating impactful solutions
-        through modern software development.
-      </p>
-    </div>
+      <!-- LEFT TEXT -->
+      <div class="about-text">
+        <p>
+          I'm an enthusiastic undergraduate student at the Faculty of Information Technology,
+          University of Moratuwa, building a strong foundation in computer science.
+        </p>
 
-    <!-- RIGHT IMAGE -->
-
-    <div class="about-image">
-      <div class="glow-ring">
-        <img src="assets/profile.jpg" alt="Profile">
+        <p>
+          My passion lies in exploring new technologies and creating impactful solutions
+          through modern software development.
+        </p>
       </div>
-    </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="about-image">
+        <div class="profile-img">
+          <img src="assets/profile.jpg" alt="Profile">
+        </div>
+      </div>
 
     </div>
 
+    <!-- CARDS SECTION -->
     <div class="about-cards">
 
       <div class="about-card">
@@ -153,6 +157,8 @@
 
     </div>
 
+  </div>
+
 </section>
 
 
@@ -178,68 +184,76 @@
 
     <!-- FRONTEND -->
     <div class="skills-content active" id="frontend">
-    <div class="skill-card">
-      <i class="fab fa-react"></i>
-      <span>React</span>
-    </div>
+      <div class="skills-grid">
 
-    <div class="skill-card">
-      <i class="fab fa-js"></i>
-      <span>JavaScript</span>
-    </div>
+        <div class="skill-card">
+          <i class="fab fa-react"></i>
+          <p>React</p>
+        </div>
 
-    <div class="skill-card">
-      <i class="fab fa-html5"></i>
-      <span>HTML5</span>
-    </div>
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <p>JavaScript</p>
+        </div>
 
-    <div class="skill-card">
-      <i class="fab fa-css3-alt"></i>
-      <span>CSS3</span>
-    </div>
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <p>HTML5</p>
+        </div>
 
-    </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS3</p>
+        </div>
 
+      </div>
+    </div>
 
     <!-- BACKEND -->
     <div class="skills-content" id="backend">
+      <div class="skills-grid">
 
-      <div class="skill-card">
-        <i class="devicon-fastapi-plain colored"></i>
-        <span>FastAPI</span>
+        <div class="skill-card">
+          <i class="devicon-fastapi-plain colored"></i>
+          <p>FastAPI</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="devicon-nodejs-plain colored"></i>
+          <p>Node.js</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="devicon-mysql-plain colored"></i>
+          <p>MySQL</p>
+        </div>
+
       </div>
-
-      <div class="skill-card">
-        <i class="devicon-nodejs-plain colored"></i>
-        <span>Node.js</span>
-      </div>
-
-      <div class="skill-card">
-        <i class="devicon-mysql-plain colored"></i>
-        <span>MySQL</span>
-      </div>
-
     </div>
 
     <!-- TOOLS -->
     <div class="skills-content" id="tools">
+      <div class="skills-grid">
 
-      <div class="skill-card">
-        <i class="devicon-git-plain colored"></i>
-        <span>Git</span>
+        <div class="skill-card">
+          <i class="devicon-git-plain colored"></i>
+          <p>Git</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="devicon-vscode-plain colored"></i>
+          <p>VS Code</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="devicon-figma-plain colored"></i>
+          <p>Figma</p>
+        </div>
+
       </div>
-
-      <div class="skill-card">
-        <i class="devicon-vscode-plain colored"></i>
-        <span>VS Code</span>
-      </div>
-
-      <div class="skill-card">
-        <i class="devicon-figma-plain colored"></i>
-        <span>Figma</span>
-      </div>
-
     </div>
+
+  </div> <!-- ✅ CLOSE skills-box -->
 
 </section>
 
@@ -304,6 +318,29 @@
   <!-- Project 3 -->
   <div class="project-card">
     <img src="assets/project3.jpg" alt="Project 03">
+    <div class="project-content">
+      <h3>Tourism App - TravelWish</h3>
+
+      <div class="tags">
+        <span class="tag mobile">Mobile</span>
+        <span class="tag done">Completed</span>
+      </div>
+
+      <p>
+        Developed a mobile application for tourism with booking,
+        guides, and real-time features.
+      </p>
+
+      <div class="project-links">
+        <a href="#"><i class="fab fa-github"></i> Code</a>
+        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+    <!-- Project 4 -->
+  <div class="project-card">
+    <img src="assets/project4.jpg" alt="Project 0">
     <div class="project-content">
       <h3>Tourism App - TravelWish</h3>
 
@@ -395,20 +432,25 @@
 
       <h2>Send Me a Message</h2>
 
-      <form class="contact-form">
+      <form class="contact-form" 
+            action="https://formspree.io/f/mdaplqgb" 
+            method="POST">
 
         <div class="form-row">
-          <input type="text" placeholder="Your name">
-          <input type="email" placeholder="your.email@example.com">
+          <input type="text" name="name" placeholder="Your name" required>
+
+          <input type="email" name="email" placeholder="your.email@example.com" required>
         </div>
 
-        <input type="text" placeholder="What's this about?">
+        <input type="text" name="subject" placeholder="What's this about?" required>
 
-        <textarea placeholder="Tell me about your project..."></textarea>
+        <textarea name="message" placeholder="Tell me about your project..." required></textarea>
 
         <div class="btn-container">
-          <button class="send-btn">Send Message</button>
+          <button type="submit" class="send-btn">Send Message</button>
         </div>
+
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
 
       </form>
 
